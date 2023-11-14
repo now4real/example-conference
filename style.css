@@ -1,0 +1,319 @@
+/* General */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #001C2A;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: flex;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001C2A;
+    color: #fff;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 155px;
+}
+
+nav .logo img {
+    width: 150px;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+ul.nav-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+ul.nav-links li {
+    margin-right: 20px;
+}
+
+ul.nav-links a {
+    color: #F4C301;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.plain-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Homepage */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    text-align: center;
+}
+
+.talks > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 20px;
+}
+
+.talk {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    cursor: pointer;
+    position: relative;
+    background-color: #0e1e30;
+    border-radius: 5px;
+}
+
+.talk a {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+.talk img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.talk-header {
+    display: flex;
+    padding: 20px;
+    background-color: #F4C301;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+.talk-header .viewers-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.talk-header .viewers {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0e1e30;
+}
+
+
+.talk-detail {
+    padding: 20px;
+    color: #fff;
+}
+
+.talk-detail h4 {
+    color: #cdcdcd;
+    margin-top: 0;
+}
+
+.talk.hot {
+    border: 2.5px solid #ef3800;
+}
+
+.talk.hot::after {
+    content: "🔥";
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #f66f00;
+}
+
+.talk:hover {
+    transform: translateY(-5px);
+}
+
+.agenda, .sponsors {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.agenda table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+
+.agenda-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.agenda-row td {
+    flex: 1;
+    width: calc(33.33% - 20px);
+    text-align: center;
+}
+
+.agenda-row .full-width {
+    width: 100%;
+}
+
+.agenda-row.live {
+    color: #000;
+    font-weight: bold;
+    border: 2.5px solid #ffcc00;
+    border-radius: 5px;
+}
+
+.agenda-row.live::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('./imgs/broadcastTower.svg') center/cover no-repeat;
+    margin: 5px 0 0 5px;
+}
+
+.sponsor-logos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.sponsor-logo {
+    margin-bottom: 20px;
+}
+
+.sponsor-logo img {
+    max-width: 220px;
+}
+
+
+
+/* Talk page */
+ol.talk-nav-links {
+    text-align: left;
+}
+
+ol.talk-nav-links li {
+    max-width: 450px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    list-style: inside decimal;
+}
+
+.talk-nav-links a {
+    color: #add4fb;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.talk-details .first-row {
+    display: flex;
+    gap: 10px;
+}
+
+/* .video-stream {
+    width: 1066px;
+    height: 600px;
+}*/
+
+.talk-details .video-container {
+    width: 1066px;
+    aspect-ratio: 16/9;
+    position: relative;
+}
+
+.talk-details .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.talk-detail .chat-box {
+    flex: 1;
+}
+.talk-detail .chat-box iframe#NOW4REAL {
+    border-radius: 10px;
+    /* border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px; */
+}
+
+.talk-details-header {
+    display: flex;
+    align-items: center;
+}
+
+.talk-details-header .talk-title {
+    text-align: left;
+}
+
+.talk-details-header .author-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    nav,
+    .logo,
+    .talk-details .first-row {
+        flex-direction: column;
+    }
+
+    nav .logo {
+        margin-left: 0;
+    }
+
+    .talks > div {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+
+    .agenda-row td {
+        width: 100%;
+    }
+
+    .agenda-row {
+        flex-direction: column;
+    }
+
+    .talk-details .video-container {
+        width: 100%;
+    }
+
+    ol.talk-nav-links {
+        padding-left: 0;
+        max-width: 100%;
+    }
+}
