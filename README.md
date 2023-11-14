@@ -16,6 +16,8 @@ This repository showcases the implementation of an online conference website, sp
 
 Visit the live demo of the conference [here](https://now4real.github.io/example-conference/).
 
+![Demo Preview](demo.png)
+
 Feel free to explore the source code to better understand the implementation details. If you have any questions or feedback, don't hesitate to reach out!
 
 Happy coding!
