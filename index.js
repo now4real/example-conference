@@ -20,7 +20,7 @@ now4real.onload = function () {
     const talks = ['talk1', 'talk2', 'talk3']
 
     talks.forEach(talk => {
-        const pageContext = `${location.protocol === 'file:' ? '' : '/talks'}/${talk}.html`
+        const pageContext = `${location.protocol === 'file:' ? '' : '/example-conference/talks'}/${talk}.html`
         const subject = `COUNTER_PAGE_VIEWERS:${pageContext}`
 
         this.subscribe(subject, upd => {
