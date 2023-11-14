@@ -5,11 +5,11 @@ now4real.config = {
     widget: {
         color_external_background: '#053c5c', color_external_text: '#fff',
         color_internal_background: '#053c5c', color_internal_text: '#fff',
-        logo_url: 'https://talk4real.staging.now4real.com/imgs/logoWidget.png', // premium feature
+        logo_url: 'https://now4real.github.io/example-conference/imgs/logoWidget.png', // premium feature
         container: 'chat-box',
         language: 'en',
         welcome_message: 'Chat with the other attenders in real time. Messages disappear after {{ time }} {{ timeUnit }}.', // premium feature
-        welcome_message_img_url: 'https://talk4real.staging.now4real.com/imgs/icon.png', // premium feature
+        welcome_message_img_url: 'https://now4real.github.io/example-conference/imgs/icon.png', // premium feature
     }
 }
 
